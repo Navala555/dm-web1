@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>คำนวณสูตร Subject และ Term</title>
+    <style>
+        body,html {
+        font-family: "Prompt", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color:lavenderblush;
+        }
+
+        input, select {
+            margin: 5px; 
+        }
+
+        button {
+            font-family: "Prompt", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin-top: 10px;
+        }
+
+        .center_text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;    
+        }
+
+        form{
+            text-align: center;
+        }
+        .card {
+        background-color: #FFDCDC;
+        padding: 4px;
+        border-radius: 25px;
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="center_text">
+        <h1 style="margin-top: 13%; margin-bottom: 0; color :tomato;">การทำนายผลคะแนนจบของนักศึกษา</h1>
+        <form id="subjectTermForm">
+            <h2 style="color: crimson;">Subject</h2>
+            <div class="card">
+            <label>&#127822; ฟิสิกส์เบื้องต้น :
+                <select id="subject1">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                </select>
+            </label><br>
+            <label>&#128200; สถิติวิเคราะห์ :
+                <select id="subject2">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                </select>
+            </label><br>
+            <label>&#129514; เคมีวิเคราะห์ 1 :
+                <select id="subject3">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                </select>
+            </label><br>
+            <label>&#129514; เคมีวิเคราะห์ 2 :
+                <select id="subject4">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                </select>
+            </label><br>
+            <label>&#129514; เคมีอนินทรีย์ 1 :
+                <select id="subject5">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                </select>
+            </label><br>
+            <label>&#129514;เคมีอินทรีย์ 1 :
+                <select id="subject6">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                </select>
+            </label><br>
+            <label>&#129514; เคมีฟิสิกข์ 1
+                <select id="subject7">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                </select>
+            </label><br>
+            <label>&#129514; เคมีเบื้องต้น :
+                <select id="subject8">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                </select>
+            </label><br>
+            <label>&#129514; เคมีอินทรีย์ 2 :
+                <select id="subject9">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                </select>
+            </label><br>
+            <label>	&#129516; ชีววิทยาเบื้องต้น :
+                <select id="subject10">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                </select>
+            </label><br>
+            <label>การสื่อสารภาษาอังกฤษเพื่อการวิเคราะห์เชิงวิชาการเคมี :
+                <select id="subject11">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                </select>
+            </label><br>
+            <label>การสื่อสารภาษาอังกฤษเพื่อวัตถุประสงค์เฉพาะเคมี :
+                <select id="subject12">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                </select>
+            </label><br>
+            <label>ความปลอดภัยทางเคมีและการจัดการสารเคมีอันตราย :
+                <select id="subject13">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                </select>
+            </label><br>
+            <label>&#128300; ปฏิบัตการชีววิทยา :
+                <select id="subject14">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                </select>
+            </label><br>
+        </div> 
+            
+            <h2 style="color: crimson;">GPA ต่อเทอม</h2>
+            <div class="card"
+            <label>ปีการศึกษาที่ 1 เทอม 1 :<input type="number" id="term1"></label><br>
+            <label>ปีการศึกษาที่ 1 เทอม 2 :<input type="number" id="term2"></label><br>
+            <label>ปีการศึกษาที่ 2 เทอม 1 :<input type="number" id="term3"></label><br>
+            <label>ปีการศึกษาที่ 2 เทอม 2 :<input type="number" id="term4"></label><br>
+            
+            <button type="button" onclick="calculate()">คำนวณ</button>
+        </form>
+        </div>
+        <h2 style="color:salmon;">&#127891; Result : <span id="result">0</span></h2>
+
+        <script>
+            function calculate() {
+                // Get subject values
+                const subject1 = parseFloat(document.getElementById('subject1').value) || 0;
+                const subject2 = parseFloat(document.getElementById('subject2').value) || 0;
+                const subject3 = parseFloat(document.getElementById('subject3').value) || 0;
+                const subject4 = parseFloat(document.getElementById('subject4').value) || 0;
+                const subject5 = parseFloat(document.getElementById('subject5').value) || 0;
+                const subject6 = parseFloat(document.getElementById('subject6').value) || 0;
+                const subject7 = parseFloat(document.getElementById('subject7').value) || 0;
+                const subject8 = parseFloat(document.getElementById('subject8').value) || 0;
+                const subject9 = parseFloat(document.getElementById('subject9').value) || 0;
+                const subject10 = parseFloat(document.getElementById('subject10').value) || 0;
+                const subject11 = parseFloat(document.getElementById('subject11').value) || 0;
+                const subject12 = parseFloat(document.getElementById('subject12').value) || 0;
+                const subject13 = parseFloat(document.getElementById('subject13').value) || 0;
+                const subject14 = parseFloat(document.getElementById('subject14').value) || 0;
+
+                // Get term values
+                const term1 = parseFloat(document.getElementById('term1').value) || 0;
+                const term2 = parseFloat(document.getElementById('term2').value) || 0;
+                const term3 = parseFloat(document.getElementById('term3').value) || 0;
+                const term4 = parseFloat(document.getElementById('term4').value) || 0;
+
+                // Calculate the result
+                const result = (
+                    (subject1 * 0.053897) +
+                    (subject2 * 0.004693) +
+                    (subject3 * 0.030542) +
+                    (subject4 * 0.046621) +
+                    (subject5 * 0.028912) +
+                    (subject6 * -0.013124) +
+                    (subject7 * 0.024101) +
+                    (subject8 * 0.034333) +
+                    (subject9 * 0.053563) +
+                    (subject10 * 0.044511) +
+                    (subject11 * 0.064281) +
+                    (subject12 * -0.016671) +
+                    (subject13 * 0.018530) +
+                    (subject14 * 0.004538) +
+                    (term1 * 0.056776) +
+                    (term2 * 0.180881) +
+                    (term3 * 0.146609) +
+                    (term4 * 0.134359) +
+                    0.40735502603536
+                );
+
+                // Display the result
+                document.getElementById('result').textContent = result.toFixed(5);
+            }
+        </script>
+    </div>
+</body>
+</html>
